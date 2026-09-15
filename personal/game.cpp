@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include <string>
+
 #ifdef _WIN32
 #include <windows.h>
 #endif
@@ -33,10 +35,15 @@ int main ()
                   5.Golem   (HP: 150 | DMG :15)
 )"<<endl;
 
+
+string monsterName;
 int selectedMonster;
+    cin >> selectedMonster;
+        cout << "You have selected Monster number : " << selectedMonster << endl;
 
-
-
+cout << "Name your monster: " << endl;
+cin >> monsterName;
+    cout << "Your Monster has been named : "<< monsterName << endl;       
 
     return 0;
 }
