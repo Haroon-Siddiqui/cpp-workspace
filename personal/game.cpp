@@ -10,6 +10,9 @@ using namespace std;
 
 int main ()
 {
+    string monsterName;
+    int selectedMonster;
+
     #ifdef _WIN32
         SetConsoleOutputCP(CP_UTF8);
     #endif
@@ -35,15 +38,38 @@ int main ()
                   5.Golem   (HP: 150 | DMG :15)
 )"<<endl;
 
-
-string monsterName;
-int selectedMonster;
     cin >> selectedMonster;
-        cout << "You have selected Monster number : " << selectedMonster << endl;
+
+if (selectedMonster == 1 )
+{
+        cout << "You Have Selected Wolf! \n";
+}
+    else if (selectedMonster == 2)
+{
+        cout << "You Have Selected Dragon! \n";
+}
+    else if (selectedMonster == 3)
+{
+        cout << "You Have Selected Zombie! \n";
+}
+    else if (selectedMonster == 4)
+{
+        cout << "You Have Selected Slime! \n";
+}
+    else if (selectedMonster == 5) 
+{
+        cout << "You Have Selected Golem! \n";
+}
+    else
+{
+        cout << "Invalid Selection! Please select a valid monster number. \n";
+        return 0;
+}
+
 
 cout << "Name your monster: " << endl;
 cin >> monsterName;
-    cout << "Your Monster has been named : "<< monsterName << endl;       
+    cout << " Your monster has been named : "<< monsterName << endl;       
 
     return 0;
 }
