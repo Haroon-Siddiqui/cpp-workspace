@@ -8,15 +8,12 @@
 
 using namespace std;
 
-int main ()
-{
-    string monsterName;
-    int selectedMonster;
+void showdisplayScreen ()
 
-    #ifdef _WIN32
-        SetConsoleOutputCP(CP_UTF8);
-    #endif
-    
+{
+
+    // Display the ASCII art and monster selection menu
+
     cout << R"(
 ███╗   ███╗ ██████╗ ███╗   ██╗███████╗████████╗███████╗██████╗
 ████╗ ████║██╔═══██╗████╗  ██║██╔════╝╚══██╔══╝██╔════╝██╔══██╗
@@ -37,8 +34,26 @@ int main ()
                   4.Slime   (HP: 120 | DMG :20)
                   5.Golem   (HP: 150 | DMG :15)
 )"<<endl;
+}
 
-    cin >> selectedMonster;
+
+int main ()
+{
+// Set the console output code page to UTF-8 for proper display of special characters
+    string monsterName;
+    int selectedMonster;
+
+    #ifdef _WIN32
+        SetConsoleOutputCP(CP_UTF8);
+    #endif
+
+showdisplayScreen();
+
+// Prompt the user to select a monster
+
+cin >> selectedMonster;
+
+// Check the selected monster and display the corresponding name
 
 if (selectedMonster == 1 )
 {
@@ -66,6 +81,8 @@ if (selectedMonster == 1 )
         return 0;
 }
 
+
+// Prompt the user to name their monster
 
 cout << "Name your monster: " << endl;
 cin >> monsterName;
