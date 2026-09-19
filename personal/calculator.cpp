@@ -7,7 +7,7 @@ int main()
     double x , y;
     
     char op ;  
-    
+    system("color E4");
     cout << "Enter Two Numbers : ";
     
     cin >> x >> y ;
