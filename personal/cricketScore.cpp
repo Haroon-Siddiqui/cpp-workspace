@@ -2,6 +2,8 @@
 using namespace std;
 int main ()
 {
+    system ("color 0B");
+
     int runsPerBall,n,totalRuns=0;
  
     // Displaing Mesages and taking input Using for loop ---------------    
@@ -15,17 +17,23 @@ int main ()
        totalRuns =totalRuns + runsPerBall;
  
        //Displaying Custom Messages based on Runs Per Ball ---------------
-        if (runsPerBall == 3){
-
-           cout << "Fast Running Between the Wickets" <<endl;
-
+       if (runsPerBall == 1){
+           cout <<endl <<"A single" <<endl <<endl;
+       } 
+       else if (runsPerBall == 2){
+           cout <<endl << "They sped up for the double" <<endl <<endl; 
+       }
+       else if (runsPerBall == 3){
+           cout <<endl << "Fast Running Between the Wickets" <<endl <<endl;
          }
        else if (runsPerBall == 4){
-          cout << "Nice! a Boundary" <<endl;
+          cout <<endl << "Nice! a Boundary" <<endl <<endl;
+       }
+       else if (runsPerBall == 5){
+          cout <<endl <<"Five for the Batting Team" <<endl <<endl;
        }
        else if (runsPerBall == 6 ){
-
-         cout <<"Wow! A sixer" <<endl;
+         cout <<endl <<"Wow! A sixer" <<endl <<endl;
        }
     }
  
