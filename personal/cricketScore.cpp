@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-int main ()
+
+main ()
 {
     system ("color 0B");
 
@@ -8,7 +9,7 @@ int main ()
  
     // Displaing Mesages and taking input Using for loop ---------------    
     for ( n=1; n<=6; n++ ){
-
+        
         cout<<"Enter Runs Scored on Ball no: "<< n <<endl;
     
        cin>> runsPerBall;
