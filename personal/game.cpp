@@ -37,7 +37,7 @@ void showdisplayScreen ()
 }
 
 
-int main ()
+main ()
 {
 // Set the console output code page to UTF-8 for proper display of special characters
     string monsterName;
